@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="shortcut icon" href="./assets/images/icon_form.png" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <header>
+    <div class="formContainer">
+      <div class="loginForm">
+        <h3>Register</h3>
+        <form action="#" method="POST">
+          <div class="formGroup">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="fname" id="fname" placeholder="First Name">
+            <h6 class="lnameUserIcon"><i class="fa-solid fa-user"></i></h6>
+            <input type="text" name="lname" id="lname" placeholder="last Name">
+          </div>
+          <div class="formGroup">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="userName" id="userNamee" placeholder="Username">
+            <h6 class="phoneIcon"><i class="fa-solid fa-phone"></i></h6>
+            <input type="tel" name="phone" id="phone" placeholder="Phone number">
+          </div>
+          <div class="formGroup">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" name="email" id="email" placeholder="Your E-mail Address">
+          </div>
+          <div class="formGroup">
+            <select name="gender" id="gender" class="gender">
+              <option value="" disabled selected class="placeholder">Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Femele</option>
+              <select>
+                <i class="fa-solid fa-cake-candles"></i>
+                <!-- <input type="date" id="date" name="date" > -->
+                <input type="text" placeholder="Date Of Birth" onfocus="(this.type='date')">
+          </div>
+          <div class="formGroup">
+            <select name="country" id="country">
+              <option value="" disabled selected class="placeholder">Country</option>
+              <option value="India">India</option>
+              <option value="NZ">New Zealand</option>
+            </select>
+            <input type="text" id="compName" name="compName" class="compName" placeholder="Your Company's Name">
+          </div>
+          <div class="formGroup">
+            <h6 class="homeeAddressIcon"><i class="fa-solid fa-person"></i></h6>
+            <textarea id="homeaddress" name="homeaddress" rows="4" cols="30"> Home Address</textarea>
+            <h6 class="officeAddressIcon"><i class="fa-solid fa-person"></i></h6>
+            <textarea id="officeaddress" name="officeaddress" rows="4" cols="30">Office Address </textarea>
+          </div>
+          <div class="formGroup">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="pwd" name="pwd" placeholder="Password">
+            <h6 class="confirmPwdIcon"><i class="fa-solid fa-lock"></i></h6>
+            <input type="password" id="cpwd" name="cpwd" placeholder="ConfirmPassword">
+          </div>
+          <div class="formGroup">
+            <input type="checkbox" name="termCondition" class="termCondition"><span class="customCheckbox">I agree with
+              the terms & Condition</span>
+
+          </div>
+          <div class="formGroup">
+            <input type="checkbox" name="offers" class="offers"><span class="customCheckbox">Receive best offers and
+              Updates</span>
+          </div>
+          <div class="formGroup">
+            <button type="button" id="registerBtn" name="registerBtn" class="registerBtn">Register</button>
+          </div>
+        </form>
+        <div class="formGroup">
+          <input type="text" id="loginAttach" name="loginAttach" class="loginAttach"
+            placeholder="Already have an account?">
+          <button type="button" id="login" class="loginBtn">Login</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- <main></main> -->
+  <!-- <footer></footer> -->
+</body>
+
+</html>
